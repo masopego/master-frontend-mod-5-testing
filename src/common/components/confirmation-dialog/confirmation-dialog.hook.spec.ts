@@ -4,8 +4,9 @@ import { useConfirmationDialog } from 'common/components/confirmation-dialog';
 
 describe('confirmation-dialog-hook', () => {
   it('should return default values', () => {
-    const { result } = renderHook(() => useConfirmationDialog());
     const emptyItemToDelete = createEmptyLookup();
+
+    const { result } = renderHook(() => useConfirmationDialog());
 
     expect(result.current.isOpen).toBe(false);
     expect(result.current.itemToDelete).toEqual(emptyItemToDelete);
@@ -43,5 +44,21 @@ describe('confirmation-dialog-hook', () => {
     });
 
     expect(result.current.isOpen).toBe(false);
+  });
+  it('should set itemToDelete as empty Lookup when call onAccept function', () => {
+    const item: Lookup = {
+      id: '8750',
+      name: 'item_test',
+    };
+    const emptyItemToDelete = createEmptyLookup();
+
+    const { result } = renderHook(useConfirmationDialog);
+
+    expect(result.current.onAccept).toEqual(expect.any(Function));
+    act(() => {
+      result.current.onOpenDialog(item);
+      result.current.onAccept();
+    });
+    expect(result.current.itemToDelete).toEqual(emptyItemToDelete);
   });
 });
