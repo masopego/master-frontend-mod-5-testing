@@ -1,5 +1,5 @@
 import React from 'react';
-import { render } from '@testing-library/react';
+import { render, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import { ConfirmationDialogComponent } from '.';
 
@@ -16,15 +16,13 @@ describe('common/ConfirmationDialogComponent', () => {
       },
     };
 
-    const { getByText, getByRole } = render(
-      <ConfirmationDialogComponent {...props} />
-    );
+    render(<ConfirmationDialogComponent {...props} />);
 
-    const title = getByText(props.title);
-    const acceptButton = getByRole('button', {
+    const title = screen.getByText(props.title);
+    const acceptButton = screen.getByRole('button', {
       name: props.labels.acceptButton,
     });
-    const closeButton = getByRole('button', {
+    const closeButton = screen.getByRole('button', {
       name: props.labels.closeButton,
     });
 
@@ -57,8 +55,8 @@ describe('common/ConfirmationDialogComponent', () => {
       },
     };
 
-    const { getByRole } = render(<ConfirmationDialogComponent {...props} />);
-    const dialog = getByRole('dialog');
+    render(<ConfirmationDialogComponent {...props} />);
+    const dialog = screen.getByRole('dialog');
 
     expect(dialog).toMatchSnapshot();
   });
@@ -75,8 +73,8 @@ describe('common/ConfirmationDialogComponent', () => {
       },
     };
 
-    const { queryByRole } = render(<ConfirmationDialogComponent {...props} />);
-    const dialog = queryByRole('dialog');
+    render(<ConfirmationDialogComponent {...props} />);
+    const dialog = screen.queryByRole('dialog');
 
     expect(dialog).toBeInTheDocument();
     expect(dialog).toBeVisible();
@@ -94,8 +92,8 @@ describe('common/ConfirmationDialogComponent', () => {
       },
     };
 
-    const { queryByRole } = render(<ConfirmationDialogComponent {...props} />);
-    const dialog = queryByRole('dialog');
+    render(<ConfirmationDialogComponent {...props} />);
+    const dialog = screen.queryByRole('dialog');
 
     expect(dialog).not.toBeInTheDocument();
     expect(dialog).toBeNull();
@@ -113,9 +111,9 @@ describe('common/ConfirmationDialogComponent', () => {
       },
     };
 
-    const { getByRole } = render(<ConfirmationDialogComponent {...props} />);
+    render(<ConfirmationDialogComponent {...props} />);
 
-    const acceptButton = getByRole('button', {
+    const acceptButton = screen.getByRole('button', {
       name: props.labels.acceptButton,
     });
 
@@ -136,9 +134,9 @@ describe('common/ConfirmationDialogComponent', () => {
       },
     };
 
-    const { getByRole } = render(<ConfirmationDialogComponent {...props} />);
+    render(<ConfirmationDialogComponent {...props} />);
 
-    const closeButton = getByRole('button', {
+    const closeButton = screen.getByRole('button', {
       name: props.labels.closeButton,
     });
 
