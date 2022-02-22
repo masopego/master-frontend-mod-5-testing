@@ -1,0 +1,91 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`common/spinnerComponent render component should check with Snapshot 1`] = `
+<div
+  class="css-1hppjzv"
+  role="presentation"
+  style="position: fixed; z-index: 1300; right: 0px; bottom: 0px; top: 0px; left: 0px;"
+>
+  <div
+    aria-hidden="true"
+    style="z-index: -1; position: fixed; right: 0px; bottom: 0px; top: 0px; left: 0px; background-color: rgba(0, 0, 0, 0.5);"
+  />
+  <div
+    data-test="sentinelStart"
+    tabindex="0"
+  />
+  <div
+    class="css-1gb2dig"
+    tabindex="-1"
+  >
+    <span
+      class="css-1xdhyk6"
+    >
+      <span
+        class="css-129peub"
+      />
+      <span
+        class="css-prnvxp"
+      />
+      <span
+        class="css-8el4s5"
+      />
+      <span
+        class="css-1hf2v34"
+      />
+      <span
+        class="css-tx0a7l"
+      />
+    </span>
+  </div>
+  <div
+    data-test="sentinelEnd"
+    tabindex="0"
+  />
+</div>
+`;
+
+exports[`common/spinnerComponent snapshot spinner component 1`] = `
+<div
+  class="css-1hppjzv"
+  role="presentation"
+  style="position: fixed; z-index: 1300; right: 0px; bottom: 0px; top: 0px; left: 0px;"
+>
+  <div
+    aria-hidden="true"
+    style="z-index: -1; position: fixed; right: 0px; bottom: 0px; top: 0px; left: 0px; background-color: rgba(0, 0, 0, 0.5);"
+  />
+  <div
+    data-test="sentinelStart"
+    tabindex="0"
+  />
+  <div
+    class="css-1gb2dig"
+    tabindex="-1"
+  >
+    <span
+      class="css-1xdhyk6"
+    >
+      <span
+        class="css-129peub"
+      />
+      <span
+        class="css-prnvxp"
+      />
+      <span
+        class="css-8el4s5"
+      />
+      <span
+        class="css-1hf2v34"
+      />
+      <span
+        class="css-tx0a7l"
+      />
+    </span>
+  </div>
+  <div
+    data-test="sentinelEnd"
+    tabindex="0"
+  />
+</div>
+`;
