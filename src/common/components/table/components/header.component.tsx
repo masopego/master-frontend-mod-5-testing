@@ -8,14 +8,14 @@ interface Props {
   headerGroups: HeaderGroup[];
 }
 
-export const HeaderComponent: React.FunctionComponent<Props> = props => {
+export const HeaderComponent: React.FunctionComponent<Props> = (props) => {
   const { headerGroups } = props;
   return (
     <TableHead>
-      {headerGroups.map(headerGroup => (
-        <TableRow {...headerGroup.getHeaderGroupProps()}>
-          {headerGroup.headers.map(column => (
-            <CellComponent {...column.getHeaderProps()}>
+      {headerGroups.map((headerGroup, index) => (
+        <TableRow {...headerGroup.getHeaderGroupProps()} key={index}>
+          {headerGroup.headers.map((column, index) => (
+            <CellComponent {...column.getHeaderProps()} key={index}>
               {column.render('Header')}
             </CellComponent>
           ))}
