@@ -1,0 +1,157 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`common/ConfirmationDialogComponent Snapshot component 1`] = `
+<div
+  class="MuiPaper-root MuiDialog-paper MuiDialog-paperScrollPaper MuiDialog-paperWidthSm MuiPaper-elevation24 MuiPaper-rounded"
+  role="dialog"
+>
+  <div
+    class="MuiDialogTitle-root"
+  >
+    <h2
+      class="MuiTypography-root MuiTypography-h6"
+    >
+      Title
+    </h2>
+  </div>
+  <div
+    class="MuiDialogContent-root"
+  />
+  <div
+    class="MuiDialogActions-root MuiDialogActions-spacing"
+  >
+    <button
+      class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedSecondary"
+      tabindex="0"
+      type="button"
+    >
+      <span
+        class="MuiButton-label"
+      >
+        Cancelar
+      </span>
+      <span
+        class="MuiTouchRipple-root"
+      />
+    </button>
+    <button
+      class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary"
+      tabindex="0"
+      type="button"
+    >
+      <span
+        class="MuiButton-label"
+      >
+        Aceptar
+      </span>
+      <span
+        class="MuiTouchRipple-root"
+      />
+    </button>
+  </div>
+</div>
+`;
+
+exports[`common/ConfirmationDialogComponent component render should check with Snapshot 1`] = `
+<div
+  class="MuiPaper-root MuiDialog-paper MuiDialog-paperScrollPaper MuiDialog-paperWidthSm MuiPaper-elevation24 MuiPaper-rounded"
+  role="dialog"
+>
+  <div
+    class="MuiDialogTitle-root"
+  >
+    <h2
+      class="MuiTypography-root MuiTypography-h6"
+    >
+      Title
+    </h2>
+  </div>
+  <div
+    class="MuiDialogContent-root"
+  />
+  <div
+    class="MuiDialogActions-root MuiDialogActions-spacing"
+  >
+    <button
+      class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedSecondary"
+      tabindex="0"
+      type="button"
+    >
+      <span
+        class="MuiButton-label"
+      >
+        Cerrar
+      </span>
+      <span
+        class="MuiTouchRipple-root"
+      />
+    </button>
+    <button
+      class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary"
+      tabindex="0"
+      type="button"
+    >
+      <span
+        class="MuiButton-label"
+      >
+        Aceptar
+      </span>
+      <span
+        class="MuiTouchRipple-root"
+      />
+    </button>
+  </div>
+</div>
+`;
+
+exports[`common/ConfirmationDialogComponent render component should check with Snapshot 1`] = `
+<div
+  class="MuiPaper-root MuiDialog-paper MuiDialog-paperScrollPaper MuiDialog-paperWidthSm MuiPaper-elevation24 MuiPaper-rounded"
+  role="dialog"
+>
+  <div
+    class="MuiDialogTitle-root"
+  >
+    <h2
+      class="MuiTypography-root MuiTypography-h6"
+    >
+      Title
+    </h2>
+  </div>
+  <div
+    class="MuiDialogContent-root"
+  />
+  <div
+    class="MuiDialogActions-root MuiDialogActions-spacing"
+  >
+    <button
+      class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedSecondary"
+      tabindex="0"
+      type="button"
+    >
+      <span
+        class="MuiButton-label"
+      >
+        Cerrar
+      </span>
+      <span
+        class="MuiTouchRipple-root"
+      />
+    </button>
+    <button
+      class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary"
+      tabindex="0"
+      type="button"
+    >
+      <span
+        class="MuiButton-label"
+      >
+        Aceptar
+      </span>
+      <span
+        class="MuiTouchRipple-root"
+      />
+    </button>
+  </div>
+</div>
+`;
